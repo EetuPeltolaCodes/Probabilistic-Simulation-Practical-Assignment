@@ -48,9 +48,6 @@ for sim = 1:Nsim
 end
 days = sort(days);
 histogram(days)
-xlabel('Average amount of days needed')
-ylabel('Occurrences')
-title('Histogram of Average Days for Batch Processing')
 mean_days = mean(days);
 mean_split = round(mean(batch_split));
 disp("Average days in greedy approach: " + num2str(mean_days))
